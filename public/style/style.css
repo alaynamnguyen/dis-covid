@@ -6,3 +6,11 @@ h1 {
     color: #5ef4;
 }
 
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title-text {
+    text-align: center;
+}

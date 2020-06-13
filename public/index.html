@@ -9,27 +9,36 @@
     
     <script src="https://www.gstatic.com/firebasejs/ui/4.5.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.1/firebase-ui-auth.css" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="style/login.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Dis-COVID</h1>
+    <h1 class="title-text">Dis-COVID</h1>
+    <!--
     <div class="search-bar">
         <input type="search" placeholder="search">
     </div>
+-->
+    <div class="login-page">
+      <div class="form">
+        <form class="login-form">
+          <input id="txtEmail" type="email" placeholder="Email">
+          <input id="txtPassword" type="password" placeholder="Password"><br>
 
-    <div class="container">
-        <input id="txtEmail" type="email" placeholder="Email">
-        <input id="txtPassword" type="password" placeholder="Password"><br>
-
-        <button id="btnLogin" class="btn btn-action">
-            Login
-        </button>
-        <button id="btnSignUp" class="btn btn-secondary">
-            Sign Up
-        </button>
-        <button id="btnLogout" class="btn btn-action hide">
-            Log Out
-        </button>
+          <button id="btnLogin" class="btn btn-action">
+              Login
+          </button>
+          <p class="message">Don't have an account? <a href="#">Sign Up Below</a></p>
+          <button id="btnSignUp" class="btn btn-secondary">
+              Sign Up
+          </button>
+          <!---
+          <button id="btnLogout" class="btn btn-action hide">
+              Log Out
+          </button>
+        -->
+        </form>
+      </div>
     </div>
     
     <!-- The core Firebase JS SDK is always required and must be listed first -->
