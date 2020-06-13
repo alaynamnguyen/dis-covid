@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+    <meta charset="utf-8">
     <title>Dis-COVID</title>
+    <link href="https://fonts.googleaps.com/css?family=Roboto:300,500" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello buddy</h1>
+    <h1>Dis-COVID</h1>
+
+    <div class="container">
+        <input id="txtEmail" type="email" placeholder="Email">
+        <input id="txtPassword" type="password" placeholder="Password"><br>
+
+        <button id="btnLogin" class="btn btn-action">
+            Login
+        </button>
+        <button id="btnSignUp" class="btn btn-secondary">
+            Sign Up
+        </button>
+        <button id="btnLogout" class="btn btn-action hide">
+            Log Out
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+
     <!-- Adding Firebase SDK -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
@@ -15,23 +35,6 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyDAquTNfqjwa8bMBSzmyO_sEaeKhhq0rWQ",
-            authDomain: "dis-covid.firebaseapp.com",
-            databaseURL: "https://dis-covid.firebaseio.com",
-            projectId: "dis-covid",
-            storageBucket: "dis-covid.appspot.com",
-            messagingSenderId: "93140684291",
-            appId: "1:93140684291:web:b740d37d012982f706c836",
-            measurementId: "G-ZNYK27S4Z4"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
 </body>
 
 </html>
