@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <title>Dis-COVID</title>
     <link href="https://fonts.googleaps.com/css?family=Roboto:300,500" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Dis-COVID</h1>
+    <div class="search-bar">
+        <input type="search" placeholder="search">
+    </div>
 
     <div class="container">
         <input id="txtEmail" type="email" placeholder="Email">
@@ -28,13 +35,6 @@
 
     <script src="app.js"></script>
 
-    <!-- Adding Firebase SDK -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
 </body>
 
 </html>
