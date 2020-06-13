@@ -1,3 +1,9 @@
+db.collection('test').get.then((snapshot)=>{
+    console.log(test.docs);
+});
+
+
+
 (function () {// Your web app's Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyDAquTNfqjwa8bMBSzmyO_sEaeKhhq0rWQ",
